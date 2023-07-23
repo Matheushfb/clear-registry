@@ -21,7 +21,7 @@ while i < len(namespaces):
         if len(tags) < tags_keep:
             print("Nenhuma ação. O repositório" ,repo_name, "possui menos que", tags_keep ,"tags registradas.")
         else:
-            tags_elegibles_for_delete=(tags[:len(tags) - tags_keep])  #Pega a lista de tags exceto as 5 mais recentes
+            tags_elegibles_for_delete=(tags[:len(tags) - tags_keep])
             for k in tags_elegibles_for_delete:
                 url_manifests = (page+"v2/"+repo_name+"/manifests/"+k)
                 payload = {'Accept': 'application/vnd.docker.distribution.manifest.v2+json'}
