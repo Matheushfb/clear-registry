@@ -14,4 +14,4 @@ Fazendo isso todos os Namespaces serão carregados corretamente!
 
 Rode o script para printar e verificar se as tags estão carregando corretamente, após isso descomente a linha 32
 para realmente deletar as images, feito isso rode  comando registry garbage-collect  /etc/docker/registry/config.yml
-esse comando concluirá a limpeza das imagens.
+dentro de seu docker registry, esse comando concluirá a limpeza das imagens.
