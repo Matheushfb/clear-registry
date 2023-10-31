@@ -29,4 +29,5 @@ while i < len(namespaces):
                 manifest = response.headers.get("Docker-Content-Digest")
                 url_to_delete = (page + "v2/" + repo_name + "/manifests/" + manifest)
                 print(url_to_delete)
+                #requests.delete(url_to_delete, timeout=2.50)
     i = i + 1
